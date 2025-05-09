@@ -1,0 +1,28 @@
+INPUT:
+    public class Counter {
+    private int count;
+   
+    public Counter() {
+        this.count = 0;
+    }
+
+  
+    public void increment() {
+        count++;
+    }
+
+   
+    public int getCount() {
+        return count;
+    }
+
+  
+    public static void main(String[] args) {
+        Counter c = new Counter();
+        System.out.println("Initial count: " + c.getCount()); // Output: 0
+        c.increment();
+        System.out.println("After increment: " + c.getCount()); // Output: 1
+    }
+}
+Output: Initial count: 0
+After increment: 1
